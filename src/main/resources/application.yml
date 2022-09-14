@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+app:
+  jwtSecret: d0hMSkBrc08rOEpnczIxKmsyX0tdbk9N
+  jwtExpirationMs: 1800000000
+  jwtRefreshExpirationMs: 300000000000
+
+spring:
+  jpa:
+    hibernate:
+      dll-auto: update
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/spring_jwt_mongo
